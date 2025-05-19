@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Task1</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #005f66;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .image-gallery img {
+      width: 100%;
+      max-width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border: 5px solid #005f66;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #005f66;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      header, footer {
+        font-size: 1.2rem;
+        padding: 15px;
+      }
+
+      .image-gallery img {
+        max-width: 90%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    CSS TASK 1
+  </header>
+
+  <main>
+    <section class="image-gallery">
+      <img src="https://blog.snapdeal.com/wp-content/uploads/2018/05/149972-OTYS5J-238.jpg" alt="Toy 1" />
+      <img src="https://www.friendshipcircle.org/ResouresImage/Play-624x416.jpg" alt="Toy 2" />
+      <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1100,h_733/https://businessingmag.com/cms/wp-content/uploads/2024/08/51996151_l-1-min.jpg" alt="Toy 3" />
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Vincent Blankson. All rights reserved.
+  </footer>
+
+</body>
+</html>
